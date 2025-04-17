@@ -14,6 +14,6 @@ public class Principal {
       System.out.println("Saldo inicial:" + var1.getSaldo());
       var1.Depositar(150.0);
       var1.Saque(200.0);
-      System.out.println("Saldo final:R$ " + var1.getSaldo());
+      System.out.println("Saldo final:" + var1.getSaldo());
    }
 }
