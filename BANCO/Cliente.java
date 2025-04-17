@@ -8,31 +8,31 @@ public class Cliente {
    public Cliente() {
    }
 
-   public void Depositar(double var1) {
-      this.saldo += var1;
-      System.out.println("Depósito de R$ " + var1 + " realizado com sucesso!");
+   public void Depositar(double valor) {
+      this.saldo += valor;
+      System.out.println("Depósito de R$ " + valor + " realizado com sucesso!");
    }
 
-   public void Saque(double var1) {
-      if (var1 <= this.saldo) {
-         this.saldo -= var1;
-         System.out.println("Saque de R$ " + var1 + " realiazado com sucesso!");
+   public void Saque(double valor) {
+      if (valor <= this.saldo) {
+         this.saldo -= valor;
+         System.out.println("Saque de R$ " + valor + " realiazado com sucesso!");
       } else {
          System.out.println("Saldo insuficiente para saque");
       }
 
    }
 
-   public void setNumeroDaConta(int var1) {
-      this.numeroConta = var1;
+   public void setNumeroDaConta(int numeroConta) {
+      this.numeroConta = numeroConta;
    }
 
-   public void setNome(String var1) {
-      this.nome = var1;
+   public void setNome(String nome ) {
+      this.nome = nome ;
    }
 
-   public void setSaldo(double var1) {
-      this.saldo = var1;
+   public void setSaldo(double saldo ) {
+      this.saldo = saldo;
    }
 
    public int getNumeroDaConta() {
